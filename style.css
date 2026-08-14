@@ -1,0 +1,752 @@
+html {
+    scroll-behavior: smooth;
+}
+.index, nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+    color: #3e2e20;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+}
+
+header {
+    background: rgba(250, 246, 240, 0.95);
+    box-shadow: 0 4px 12px rgba(62, 46, 32, 0.08);
+    padding: 12px 30px;
+    border-bottom: 1px solid rgba(62, 46, 32, 0.08);
+}
+
+header h1 {
+    padding-bottom: 0;
+    margin: 0;
+    text-shadow: 2px 2px rgba(146, 143, 143, 0.6);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    border: 1px solid #d7d2cb;
+    background-color: #efe5dc;
+    color: #3e2e20;
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+    transform: translateY(-3px);
+    border-color: #3e2e20;
+    background-color: #3e2e20;
+    color: #FAF6F0;
+    box-shadow: 0 6px 12px rgba(62, 46, 32, 0.12);
+}
+
+body {
+    background-color: #FAF6F0;
+    margin: 0;
+    color: #3e2e20;
+    font-family:'Times New Roman', Times, serif;
+}
+#home {
+    min-height: 85vh;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 30px 6%;
+    box-sizing: border-box;
+}
+
+#home .homeh2 {
+    width: 50%;
+    box-shadow: 0 12px 30px rgba(62, 46, 32, 0.08);
+    padding: 5% 4%;
+    background-color: #f3eae2;
+    border: 1px solid rgba(62, 46, 32, 0.08);
+    border-radius: 28px;
+    transition: all 0.25s ease-in-out;
+}
+
+#home .homeh2:hover {
+    transform: translateY(-3px);
+}
+
+#home h2 {
+    font-size: clamp(2.6rem, 5vw, 5rem);
+    margin: 0 0 25px;
+    text-shadow: 2px 2px rgba(139, 139, 139, 0.45);
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1.08;
+    color: #3e2e20;
+}
+
+#home p {
+    width: 82%;
+    margin: auto;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    color: rgba(62, 46, 32, 0.85);
+}
+
+#home img {
+    width: 47%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 18px 35px rgba(62, 46, 32, 0.12);
+}
+
+#home button {
+    border: solid #584c42;
+    margin: 28px auto 0;
+    display: block;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #584c42, #3c2d24);
+    font-weight: bold;
+    color: #FAF6F0;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+#home button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #3c2d24, #584c42);
+}
+
+#home button:active {
+    background-color: #EDE0D4;
+    border: solid #EDE0D4;
+    color: #5c5956;
+}
+
+
+#about {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    padding: 60px 5%;
+    box-sizing: border-box;
+    background-image: 
+        linear-gradient(
+            to bottom,
+            rgba(250, 246, 240, 0.82),
+            rgba(250, 246, 240, 0.72) 25%,
+            rgba(250, 246, 240, 0.8) 100%
+        ),
+        url("Aesthetic Coffee Wallpaper.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#about img {
+    width: 42%;
+    max-width: 500px;
+    height: auto;
+    box-shadow: 0 18px 30px rgba(62, 46, 32, 0.12);
+    border-radius: 30px;
+    margin-left: 3%;
+}
+
+#about div {
+    width: 45%;
+    text-align: center;
+    background: rgba(255,255,255,0.18);
+    border-radius: 22px;
+    padding: 20px;
+}
+
+#about h2 {
+    font-size: clamp(2.3rem, 4vw, 4rem);
+    margin: 0 0 20px;
+    text-shadow: 2px 2px rgba(159, 154, 154, 0.45);
+    font-family: sans-serif;
+    color: #3e2e20;
+    text-align: center;
+}
+
+#about p {
+    width: 82%;
+    margin: auto;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    color: rgba(62, 46, 32, 0.85);
+}
+#about a{
+    background-color:#3c2d24;
+    border: solid #584c42;
+    border-radius: 22px;
+    padding:10px 20px ;
+    margin: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 18px 35px rgba(62, 46, 32, 0.12);
+}
+#about a:hover{
+    transform: translateY(-3px);
+    background-color: #3c2d24;
+}
+#about a:active{
+    background-color: #EDE0D4;
+    border: solid #EDE0D4;
+    color: #5c5956;
+}
+#menu {
+    margin-top:50px;
+    padding: 5% 8%;
+    background-image: 
+        linear-gradient(
+            to bottom,
+            rgba(250, 246, 240, 0.82),
+            rgba(250, 246, 240, 0.72) 25%,
+            rgba(250, 246, 240, 0.8) 100%
+        ),
+        url("Aesthetic Coffee Wallpaper.jfif");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+#menu h2 {
+    font-size: 80px;
+    text-align: center;
+    text-shadow: #5c5956 2px 2px;
+    margin-bottom: 50px;
+}
+
+#menu #item1,
+#menu #item2,
+#menu #item3,
+#menu #item4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 40px 0;
+    padding: 30px;
+
+    border: #584c42 solid 1px;
+    box-shadow: 0 20px 35px rgba(62, 46, 32, 0.12);
+    background-color: #f4eeea;
+    border-radius: 24px;
+
+    transition: all 0.25s ease-in-out;
+}
+#menu #item1:hover,
+#menu #item2:hover,
+#menu #item3:hover,
+#menu #item4:hover {
+    transform: translateY(-4px);
+}
+
+#menu h3 {
+    font-size: 50px;
+}
+
+#menu h4,
+#menu b {
+    font-size: 30px;
+}
+
+#menu p {
+    font-size: 20px;
+    margin-right: 10%;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+#menu img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f3eae2;
+    margin:40px 20%;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(62, 46, 32, 0.08);
+}
+
+#contact h2 {
+    color: #3e2e20;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#contact a {
+    color: #3e2e20;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+    
+}
+
+#contact a:hover {
+    background-color: #d7d2cb;
+    transform: scale(1.05);
+}
+
+
+/*---------------------------SignUP----------------------------*/
+.singup h2,.form2 h2{
+    text-align: center;
+    font-size: 60px;
+}
+.form,.form2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:#3c2d24 solid ;
+    margin:5% 30%;
+    padding: 30px;
+    border-radius: 24px;
+    background-color: #f3eae2;
+    
+}
+.form input,.form2 input{
+    margin:20px;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 15px;
+}
+
+.form-group label {
+    width: 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 250px;
+    padding: 10px;
+}
+.form button,.form2 button,.Choose{
+    padding:15px;
+    border-radius: 24px;
+    background-color:#3c2d24;
+    color: white;
+    transition: all 0.25s ease-in-out;
+    margin-top: 12px;
+}
+.form button:hover,.form2 button:hover,.Choose:hover{
+    transform: translateY(-3px);
+    background-color: #6f6156;
+    color: white;
+}
+.form button:active,.form2 button:active,.Choose:active{
+    background-color: #292622;
+    border: solid #EDE0D4;
+    color: #5c5956;
+}
+/*---------------------------footer----------------------------*/
+
+footer {
+    background-color: #3c2d24;
+    color: #FAF6F0;
+    text-align: center;
+    padding: 40px 20px 20px;
+    margin-top: 60px;
+}
+
+footer h2 {
+    font-size: 35px;
+    margin: 0 0 10px;
+    text-shadow: 2px 2px #584c42;
+}
+
+footer p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+footer .copyright {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(250, 246, 240, 0.2);
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+
+/*---------------------------Order----------------------------*/
+
+#Order {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 5%;
+    margin-top: 40px;
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(250, 246, 240, 0.82),
+            rgba(250, 246, 240, 0.72) 25%,
+            rgba(250, 246, 240, 0.8) 100%
+        ),
+        url("Aesthetic Coffee Wallpaper.jfif");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Order form {
+    width: 70%;
+    max-width: 800px;
+    padding: 45px;
+    background-color: #f3eae2;
+    border: 1px solid #584c42;
+    border-radius: 28px;
+    box-shadow: 0 20px 35px rgba(62, 46, 32, 0.15);
+}
+
+#Order h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #3e2e20;
+    text-shadow: 2px 2px rgba(139, 139, 139, 0.35);
+    margin-bottom: 15px;
+}
+
+#Order form > div {
+    margin-bottom: 35px;
+}
+
+#Order form > div:first-child {
+    text-align: center;
+}
+
+#Order form > div:first-child p {
+    font-size: 18px;
+    color: rgba(62, 46, 32, 0.8);
+}
+
+/* Selected Coffee */
+
+#Order #selectedName,
+#Order #selectedPrice,
+#Order #selectedCategory {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    color: #3e2e20;
+}
+
+/* Size */
+
+#Order form > div:nth-child(2) {
+    text-align: center;
+}
+
+#Order form > div:nth-child(2) > div {
+    display: inline-block;
+    margin: 10px;
+}
+
+#Order input[type="radio"] {
+    accent-color: #3c2d24;
+}
+
+#Order label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3e2e20;
+}
+
+/* Quantity */
+
+#Order form > div:nth-child(3) {
+    text-align: center;
+}
+
+#Order input[type="number"] {
+    width: 100px;
+    padding: 10px;
+    margin-left: 15px;
+    border: 1px solid #584c42;
+    border-radius: 12px;
+    background-color: #FAF6F0;
+    color: #3e2e20;
+    font-size: 16px;
+}
+
+/* Order Summary */
+
+#Order form > div:nth-child(4) {
+    padding: 25px;
+    background-color: #efe5dc;
+    border-radius: 20px;
+    border: 1px solid rgba(62, 46, 32, 0.15);
+}
+
+#Order form > div:nth-child(4) h2 {
+    font-size: 32px;
+}
+
+#Order form > div:nth-child(4) p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px 0;
+    color: #3e2e20;
+}
+
+/* Submit Button */
+
+#Order button {
+    display: block;
+    margin: auto;
+    padding: 14px 35px;
+    border: 1px solid #584c42;
+    border-radius: 24px;
+    background-color: #3c2d24;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+#Order button:hover {
+    transform: translateY(-3px);
+    background-color: #6f6156;
+    box-shadow: 0 8px 15px rgba(62, 46, 32, 0.15);
+}
+
+#Order button:active {
+    transform: translateY(0);
+    background-color: #292622;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------- Responsive Design ----------------*/
+
+@media (max-width: 768px)
+{
+    /* Navbar */
+    header
+    {
+        padding: 15px;
+    }
+
+    .index
+    {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul li a
+    {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+
+    /* Home */
+    #home
+    {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+
+    #home .homeh2
+    {
+        width: 90%;
+    }
+
+    #home img
+    {
+        width: 90%;
+    }
+
+    #home h2
+    {
+        font-size: 2.5rem;
+    }
+
+
+    /* About */
+    #about
+    {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+
+    #about img
+    {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    #about div
+    {
+        width: 90%;
+    }
+
+
+    /* Menu */
+    #menu
+    {
+        padding: 40px 5%;
+    }
+
+    #menu h2
+    {
+        font-size: 50px;
+    }
+
+    #menu #item1,
+    #menu #item2,
+    #menu #item3,
+    #menu #item4
+    {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #menu h3
+    {
+        font-size: 35px;
+    }
+
+    #menu h4
+    {
+        font-size: 24px;
+    }
+
+    #menu p
+    {
+        font-size: 17px;
+        margin-right: 0;
+    }
+
+    #menu img
+    {
+        width: 90%;
+        height: auto;
+        max-width: 300px;
+    }
+
+
+    /* Order */
+    #Order
+    {
+        padding: 40px 5%;
+    }
+
+    #Order form
+    {
+        width: 90%;
+        padding: 25px;
+    }
+
+    #Order h2
+    {
+        font-size: 30px;
+    }
+
+    #Order form > div:nth-child(2) > div
+    {
+        display: block;
+    }
+
+
+    /* Contact */
+    #contact
+    {
+        margin: 30px 5%;
+    }
+
+
+    /* Sign Up / Sign In */
+    .form,
+    .form2
+    {
+        margin: 5%;
+        padding: 20px;
+    }
+
+    .form-group
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group label
+    {
+        width: auto;
+    }
+
+    .form-group input
+    {
+        width: 90%;
+    }
+}

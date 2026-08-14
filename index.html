@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Coffee Shop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Amodern coffee shop landing page featuring 
+        delicious hot and cold coffee,a variety of products,prices,
+        and a simple interactive ordering experience.">
+        <meta name="keywords" content="coffee shop,coffee,cafe,hot coffee,cold coffee,
+        latte,cappuccino,mocha,iced coffee,coffee menu,coffee products,online coffee order,
+        coffee landing page,cafe website.">
+        <meta name="author" content="martina farah">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <header class="index">
+            <section class="logo">
+                <h1>Caffainaaaaaaa</h1>
+                <img src="logo.png" alt="coffee logo" height="100px" width="100px">
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="SignIn.html" target="_blank">Sign In</a></li>
+                    <li><a href="SignUp.html" target="_blank">Sign Up</a></li>
+                    <li><a href="#menu">Order Your Coffee</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <section id="home">
+                <div class="homeh2">
+                    <h2>Start Your Day With Great Coffee</h2>
+                    <p>Discover the rich taste of freshly brewed coffee, made with carefully selected beans and served with love.
+                    Whether you're starting your morning, taking a break, or meeting with friends, we’re here to make every moment a little better.
+                    Fresh Coffee • Delicious Treats • Cozy Moments
+                    Come in, grab your favorite drink, and enjoy the perfect coffee experience.</p>
+                    <button id="OrderNow">Order Now</button>
+                </div>
+                <img src="coffee.png" alt="coffee photo" height="600px" width="600px">
+            </section>
+            <section id="about">
+                    <img src="coffee2.png" alt="coffee photo" height="600px" width="600px">
+                    <div>
+                        <h2>Brewed With Passion</h2>
+                        <p>Every cup tells a story. Enjoy freshly brewed coffee, delicious flavors, and a warm atmosphere made for every coffee lover</p>
+                        <a href="#menu">Discover Our Menu</a>
+                    </div>
+            </section>
+            <section id="menu">
+                <h2>OUR MENU</h2>
+                <section id="item1">
+                    <div>
+                        <h3>Espresso</h3>
+                        <p class="price"></p>
+                        <p class="category"></p>
+                        <h4>Description: </h4>
+                        <p>A rich and bold coffee with an intense flavor, perfect for those who love their coffee strong and simple.</p>
+                        <h4>Ingredients: </h4>
+                        <p>Finely ground coffee beans & hot water.</p>
+                        <button class="Choose">Choose Coffee</button>
+                    </div>
+                    <img src="Espresso.png" alt="item1" height="600px" width="600px">
+                </section>
+                <section id="item2">
+                    <div>
+                        <h3>Latte</h3>
+                        <p class="price"></p>
+                        <p class="category"></p>
+                        <h4>Description: </h4>
+                        <p>A smooth and creamy coffee with a gentle espresso flavor, perfect for a relaxing coffee break.</p>
+                        <h4>Ingredients: </h4>
+                        <p>Espresso, steamed milk & a light layer of milk foam.</p>
+                        <button class="Choose">Choose Coffee</button>
+                    </div>
+                    <img src="https://i.pinimg.com/1200x/ff/42/83/ff42838d01f58f8b641deb2058cdb524.jpg" alt="item2">
+                </section>
+                <section id="item3">
+                    <div>
+                        <h3>Cappuccino</h3>
+                        <p class="price"></p>
+                        <p class="category"></p>
+                        <h4>Description: </h4>
+                        <p>A perfectly balanced coffee with a strong espresso taste and a creamy, airy foam that makes every sip special.</p>
+                        <h4>Ingredients: </h4>
+                        <p>Espresso, steamed milk & thick milk foam.</p>
+                        <button class="Choose">Choose Coffee</button>
+                    </div>
+                    <img src="Cappuccino.png" alt="item3">
+                </section>
+                <section id="item4">
+                    <div>
+                        <h3>Mocha</h3>
+                        <p class="price"></p>
+                        <p class="category"></p>
+                        <h4>Description: </h4>
+                        <p>A delicious combination of rich coffee and chocolate with a creamy finish, perfect for coffee and chocolate lovers.</p>
+                        <h4>Ingredients: </h4>
+                        <p>Espresso, chocolate, steamed milk & milk foam.</p>
+                        <button class="Choose">Choose Coffee</button>
+                    </div>
+                    <img src="https://i.pinimg.com/736x/b6/d1/13/b6d1138bbe3cdad3ca7b7204f06d6903.jpg" alt="item4">
+                </section>
+                
+            </section>
+            <section id="Order">
+                <form action="" id="orderForm">
+                    <div>
+                        <h2>Order Your Coffee</h2>
+                        <p>Choose your favorite coffee, pick your size, and enjoy your perfect cup.</p>
+                        <p id="selectedName">Coffee: Not Selected</p>
+                        <p id="selectedPrice">Price: --</p>
+                        <p id="selectedCategory">Category: --</p>
+                    </div>
+                    <div>
+                        <h2>Choose Your Size</h2>
+                        <div>
+                            <input type="radio" name="size" id="small" value="small">
+                            <label for="small">Small</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="size" id="medium" value="medium">
+                            <label for="medium">Medium</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="size" id="large" value="large">
+                            <label for="large">Large</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>How Many Cups you need?</h2>
+                        <label for="cups">Number Of Cups</label>
+                        <input type="number" name="num_of_cups" id="cups" min=1>
+                    </div>
+                    <div>
+                        <h2>Order Summary</h2>
+                        <p id="customerName">Customer: --</p>
+                        <p id="summaryCoffee">Coffee: --</p>
+                        <p id="summarySize">Size: --</p>
+                        <p id="summaryQuantity">Quantity: --</p>
+                        <p id="pricePerCup">Price Per Cup: --</p>
+                        <p id="totalPrice">Total Price: --</p>
+                        <p id="priceCategory">Price Category: --</p>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <a href="mailto:martinafarah6@gmail.com">Email</a>
+                <a href="tel:01050810489">Phone</a>
+                <a href="https://www.facebook.com/share/1DWyyKc7sb/">FaceBook</a>
+                <a href="https://www.instagram.com/6613_mar?igsh=MTcybGFlMmNsaHFvbQ==">Instegram</a>
+            </section>
+
+        </div>
+        <footer>
+            <h2>Caffainaaaa</h2>
+            <p>Brewed with passion, served with love.</p>
+            <p class="copyright">© 2026 Caffainaaaa. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
