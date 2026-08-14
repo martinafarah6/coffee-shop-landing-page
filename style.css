@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;
 }
 .index, nav ul {
     display: flex;
@@ -580,173 +580,223 @@ footer .copyright {
 
 /*---------------- Responsive Design ----------------*/
 
-@media (max-width: 768px)
-{
-    /* Navbar */
-    header
-    {
-        padding: 15px;
-    }
+@media (max-width: 768px) 
+{ 
+    /* Navbar */ 
+    header 
+    { 
+        padding: 15px; 
+    } 
+    .index 
+    { 
+        flex-direction: column; 
+        gap: 15px; 
+    } 
 
-    .index
-    {
-        flex-direction: column;
-        gap: 15px;
-    }
+    nav ul 
+    { 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px; 
+    } 
 
-    nav ul
-    {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
+    nav ul li a 
+    { 
+        font-size: 14px; 
+        padding: 8px 12px; 
+    } 
 
-    nav ul li a
-    {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
+    /*Home */ 
+    #home 
+    { 
+        flex-direction: column; 
+        text-align: center; 
+        padding: 30px 5%; 
+    } 
+
+    #home .homeh2 
+    { 
+        width: 90%; 
+    } 
+
+    #home img 
+    { 
+        width: 90%; 
+    } 
+
+    #home h2 
+    { 
+        font-size: 2.5rem; 
+    } 
+
+    /* About */ 
+    #about 
+    { 
+        flex-direction: column; 
+        padding: 40px 5%; 
+    } 
+
+    #about img 
+    { 
+        width: 90%; 
+        margin-left: 0; 
+    } 
+
+    #about div 
+    { 
+        width: 90%; 
+    } 
+
+    /* Menu */ 
+    #menu 
+    { 
+        padding: 40px 5%; 
+    } 
+
+    #menu h2 
+    { 
+        font-size: 50px; 
+    } 
+
+    #menu #item1, 
+    #menu #item2, 
+    #menu #item3, 
+    #menu #item4 
+    { 
+        flex-direction: column; 
+        text-align: center; 
+        padding: 20px; 
+    } 
+
+    #menu h3 
+    { 
+        font-size: 35px; 
+    } 
+
+    #menu h4 
+    { 
+        font-size: 24px; 
+    } 
+
+    #menu p 
+    { 
+        font-size: 17px; 
+        margin-right: 0; 
+    } 
+
+    #menu img 
+    { 
+        width: 90%; 
+        height: auto; 
+        max-width: 300px; 
+    } 
+
+    /* Order */ 
+    #Order 
+    { 
+        padding: 40px 5%; 
+    } 
+
+    #Order form 
+    { 
+        width: 90%; 
+        padding: 25px; 
+    } 
+
+    #Order h2 
+    { 
+        font-size: 30px; 
+    } 
+
+    #Order form > div:nth-child(2) > div 
+    { 
+        display: block; 
+    } 
+    /* Contact */ 
+    #contact 
+    { 
+        margin: 30px 5%; 
+    } 
+    /* Sign Up / Sign In */ 
+    .singup h2 
+    { 
+        font-size: 45px; 
+    } 
+    .form, 
+    .form2 
+    { 
+        width: 90%; 
+        margin: 5% auto; 
+        padding: 20px; 
+        box-sizing: border-box; 
+    } 
+    .form-group 
+    { 
+        width: 100%; 
+        flex-direction: column; 
+        align-items: flex-start; 
+        margin: 12px 0; 
+    } 
+    .form-group label 
+    { 
+        width: auto; 
+        font-size: 18px; 
+    } 
+    .form-group input 
+    { 
+        width: 100%; 
+        box-sizing: border-box; 
+        margin: 5px 0 15px; 
+    } 
+    .form button, 
+    .form2 button 
+    { 
+        width: 120px; 
+    } 
+    footer h2 
+    { 
+        font-size: 28px; 
+    } 
+    footer p 
+    { 
+        font-size: 15px; 
+    } 
+} 
 
 
-    /* Home */
-    #home
-    {
-        flex-direction: column;
-        text-align: center;
-        padding: 30px 5%;
-    }
-
-    #home .homeh2
-    {
-        width: 90%;
-    }
-
-    #home img
-    {
-        width: 90%;
-    }
-
-    #home h2
-    {
-        font-size: 2.5rem;
-    }
-
-
-    /* About */
-    #about
-    {
-        flex-direction: column;
-        padding: 40px 5%;
-    }
-
-    #about img
-    {
-        width: 90%;
-        margin-left: 0;
-    }
-
-    #about div
-    {
-        width: 90%;
-    }
-
-
-    /* Menu */
-    #menu
-    {
-        padding: 40px 5%;
-    }
-
-    #menu h2
-    {
-        font-size: 50px;
-    }
-
-    #menu #item1,
-    #menu #item2,
-    #menu #item3,
-    #menu #item4
-    {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    #menu h3
-    {
-        font-size: 35px;
-    }
-
-    #menu h4
-    {
-        font-size: 24px;
-    }
-
-    #menu p
-    {
-        font-size: 17px;
-        margin-right: 0;
-    }
-
-    #menu img
-    {
-        width: 90%;
-        height: auto;
-        max-width: 300px;
-    }
-
-
-    /* Order */
-    #Order
-    {
-        padding: 40px 5%;
-    }
-
-    #Order form
-    {
-        width: 90%;
-        padding: 25px;
-    }
-
-    #Order h2
-    {
-        font-size: 30px;
-    }
-
-    #Order form > div:nth-child(2) > div
-    {
-        display: block;
-    }
-
-
-    /* Contact */
-    #contact
-    {
-        margin: 30px 5%;
-    }
-
-
-    /* Sign Up / Sign In */
-    .form,
-    .form2
-    {
-        margin: 5%;
-        padding: 20px;
-    }
-
-    .form-group
-    {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .form-group label
-    {
-        width: auto;
-    }
-
-    .form-group input
-    {
-        width: 90%;
-    }
+@media (max-width: 480px) 
+{ 
+    .singup h2 
+    { 
+        font-size: 35px; 
+    } 
+    .form, 
+    .form2 
+    { 
+        width: 92%; 
+        padding: 15px; 
+    } 
+    .form-group input 
+    { 
+        font-size: 14px; 
+        padding: 10px; 
+    } 
+    .form button, 
+    .form2 button 
+    { 
+        width: 110px; 
+        padding: 10px; 
+    } 
+    footer 
+    { 
+        padding: 30px 15px 15px; 
+    } 
+    footer h2 
+    { 
+        font-size: 25px; 
+    } 
+    footer p 
+    { 
+        font-size: 14px; 
+    } 
 }
